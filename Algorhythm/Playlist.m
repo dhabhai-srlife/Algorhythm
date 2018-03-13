@@ -32,7 +32,7 @@
         _playlistArtists = [NSArray arrayWithArray:[playlistDictionary objectForKey:kArtists]];
         
         NSDictionary *colorDictionary = [playlistDictionary objectForKey:kBackgroundColor];
-        _backgroundColor = [self rgbColorFromDictionary:colorDictionary]
+        _backgroundColor = [self rgbColorFromDictionary:colorDictionary];
         
     }
     return self;
