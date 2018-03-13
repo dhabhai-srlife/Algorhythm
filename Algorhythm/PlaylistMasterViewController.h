@@ -12,6 +12,5 @@
 
 @property (weak, nonatomic) IBOutlet UIButton *aButton;
 
-
 @end
 

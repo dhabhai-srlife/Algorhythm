@@ -22,12 +22,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mel-Iw-Obo">
-                                <rect key="frame" x="184" y="353" width="46" height="30"/>
+                                <rect key="frame" x="181.66666666666666" y="351.66666666666669" width="51" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Button">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8NF-zf-AhB" kind="show" id="Yfo-lQ-O0S"/>
+                                    <segue destination="8NF-zf-AhB" kind="show" identifier="showPlaylistDetail" id="Yfo-lQ-O0S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,9 +58,24 @@
                     <view key="view" contentMode="scaleToFill" id="Hc6-a8-58F">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You haven't pressed the button!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yf1-nF-AI9">
+                                <rect key="frame" x="86" y="358" width="243" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Yf1-nF-AI9" firstAttribute="centerX" secondItem="Hc6-a8-58F" secondAttribute="centerX" id="9DO-wU-SSt"/>
+                            <constraint firstItem="Yf1-nF-AI9" firstAttribute="centerY" secondItem="Hc6-a8-58F" secondAttribute="centerY" id="sCg-Sn-gPR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Artists" id="bCC-bu-Fxv"/>
+                    <connections>
+                        <outlet property="buttonPressLabel" destination="Yf1-nF-AI9" id="rM5-qA-pls"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRA-o8-flt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

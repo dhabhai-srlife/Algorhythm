@@ -10,4 +10,7 @@
 
 @interface PlaylistDetailViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UILabel *buttonPressLabel;
+@property (strong, nonatomic) NSString *segueLabelText;
+
 @end
