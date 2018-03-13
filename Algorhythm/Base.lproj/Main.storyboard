@@ -46,7 +46,7 @@
             </objects>
             <point key="canvasLocation" x="923.1884057971015" y="39.945652173913047"/>
         </scene>
-        <!--Playlist Detail View Controller-->
+        <!--Artists-->
         <scene sceneID="ZmA-9G-Mta">
             <objects>
                 <viewController id="8NF-zf-AhB" customClass="PlaylistDetailViewController" sceneMemberID="viewController">
@@ -59,6 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Artists" id="bCC-bu-Fxv"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRA-o8-flt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
