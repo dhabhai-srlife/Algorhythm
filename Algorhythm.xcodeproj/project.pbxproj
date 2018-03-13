@@ -14,6 +14,8 @@
 		4C6CF79B20570ED100E2ED36 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CF79A20570ED100E2ED36 /* Assets.xcassets */; };
 		4C6CF79E20570ED100E2ED36 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C6CF79C20570ED100E2ED36 /* LaunchScreen.storyboard */; };
 		4C6CF7A72057176D00E2ED36 /* PlaylistDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CF7A62057176D00E2ED36 /* PlaylistDetailViewController.m */; };
+		4CAE1EA72058440D008DB485 /* MusicPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE1EA62058440D008DB485 /* MusicPlaylist.m */; };
+		4CAE1EAA20586828008DB485 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4CAE1EA920586828008DB485 /* Playlist.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		4C6CF79F20570ED100E2ED36 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4C6CF7A52057176D00E2ED36 /* PlaylistDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PlaylistDetailViewController.h; sourceTree = "<group>"; };
 		4C6CF7A62057176D00E2ED36 /* PlaylistDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistDetailViewController.m; sourceTree = "<group>"; };
+		4CAE1EA52058440D008DB485 /* MusicPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicPlaylist.h; sourceTree = "<group>"; };
+		4CAE1EA62058440D008DB485 /* MusicPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicPlaylist.m; sourceTree = "<group>"; };
+		4CAE1EA820586828008DB485 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		4CAE1EA920586828008DB485 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +73,10 @@
 				4C6CF79520570ED100E2ED36 /* PlaylistMasterViewController.m */,
 				4C6CF7A52057176D00E2ED36 /* PlaylistDetailViewController.h */,
 				4C6CF7A62057176D00E2ED36 /* PlaylistDetailViewController.m */,
+				4CAE1EA52058440D008DB485 /* MusicPlaylist.h */,
+				4CAE1EA62058440D008DB485 /* MusicPlaylist.m */,
+				4CAE1EA820586828008DB485 /* Playlist.h */,
+				4CAE1EA920586828008DB485 /* Playlist.m */,
 				4C6CF79720570ED100E2ED36 /* Main.storyboard */,
 				4C6CF79A20570ED100E2ED36 /* Assets.xcassets */,
 				4C6CF79C20570ED100E2ED36 /* LaunchScreen.storyboard */,
@@ -156,8 +166,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C6CF79620570ED100E2ED36 /* PlaylistMasterViewController.m in Sources */,
+				4CAE1EAA20586828008DB485 /* Playlist.m in Sources */,
 				4C6CF7A72057176D00E2ED36 /* PlaylistDetailViewController.m in Sources */,
 				4C6CF79320570ED100E2ED36 /* AppDelegate.m in Sources */,
+				4CAE1EA72058440D008DB485 /* MusicPlaylist.m in Sources */,
 				4C6CF79020570ED100E2ED36 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +327,7 @@
 				4C6CF7A420570ED100E2ED36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
