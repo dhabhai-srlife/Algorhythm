@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Msg-Ss-KDT">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Playlist Master View Controller-->
+        <!--Playlists-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="PlaylistMasterViewController" sceneMemberID="viewController">
@@ -27,7 +27,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="8NF-zf-AhB" kind="presentation" id="Yfo-lQ-O0S"/>
+                                    <segue destination="8NF-zf-AhB" kind="show" id="Yfo-lQ-O0S"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -37,12 +37,14 @@
                             <constraint firstItem="mel-Iw-Obo" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="urX-va-DfE"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Playlists" id="cNc-Rw-Nt7"/>
                     <connections>
                         <outlet property="aButton" destination="mel-Iw-Obo" id="hET-8P-iTe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="923.1884057971015" y="39.945652173913047"/>
         </scene>
         <!--Playlist Detail View Controller-->
         <scene sceneID="ZmA-9G-Mta">
@@ -60,7 +62,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yRA-o8-flt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="772" y="40"/>
+            <point key="canvasLocation" x="1678.2608695652175" y="39.945652173913047"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Qkr-mI-vUD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Msg-Ss-KDT" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="NzR-hk-unq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="L9R-8Q-LTN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XMz-7i-S1t" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="15.942028985507248" y="39.945652173913047"/>
         </scene>
     </scenes>
 </document>
