@@ -8,6 +8,7 @@
 
 #import "PlaylistMasterViewController.h"
 #import "PlaylistDetailViewController.h"
+#import "Playlist.h"
 
 @interface PlaylistMasterViewController ()
 
@@ -18,7 +19,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.aButton setTitle:@"Press me!" forState:UIControlStateNormal];
-    [self.aButton setTintColor:[UIColor redColor]];
+    
+    Playlist *playlist = [[Playlist alloc] initWith:0];
+    self.playlistImageView0.image = playlist.playlistIcon;
 }
 
 - (void)didReceiveMemoryWarning {
