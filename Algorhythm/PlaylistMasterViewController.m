@@ -32,8 +32,8 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showPlaylistDetail"]) {
         PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailViewController.segueLabelText = @"You pressed the button!";
-    }
+        playlistDetailViewController.playlist = [[Playlist alloc] initWith:0];
+    }        
 }
 
 @end
