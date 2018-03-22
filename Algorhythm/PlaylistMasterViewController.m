@@ -19,8 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    Playlist *playlist = [[Playlist alloc] initWith:0];
-    self.playlistImageView0.image = playlist.playlistIcon;
+    for (NSUInteger index = 0; index < self.playlistImageViews.count; index++) {
+        Playlist *playlist = [[Playlist alloc] initWith:index];
+        UIImageView *playlistImageView = self.playlistImageViews[index];
+        
+        playlistImageView.image = playlist.playlistIcon;
+        playlistImageView.backgroundColor = playlist.backgroundColor;
+        
+    }
 }
 
 - (void)didReceiveMemoryWarning {
