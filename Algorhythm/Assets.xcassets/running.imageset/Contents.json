@@ -1,13 +1,8 @@
 {
   "images" : [
     {
-      "idiom" : "universal"
-    },
-    {
       "idiom" : "universal",
-      "filename" : "running.pdf",
-      "unassigned" : true,
-      "scale" : "1x"
+      "filename" : "running.pdf"
     }
   ],
   "info" : {

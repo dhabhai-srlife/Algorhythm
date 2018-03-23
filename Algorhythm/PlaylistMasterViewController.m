@@ -19,10 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    for (NSUInteger index = 0; index < self.playlistImageViews.count; index++) {
+    NSUInteger count = self.playlistImageViews.count;
+    for (NSUInteger index = 0; index < count; index++) {
         Playlist *playlist = [[Playlist alloc] initWith:index];
         UIImageView *playlistImageView = self.playlistImageViews[index];
-        
         playlistImageView.image = playlist.playlistIcon;
         playlistImageView.backgroundColor = playlist.backgroundColor;
         
@@ -36,8 +36,12 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([segue.identifier isEqualToString:@"showPlaylistDetail"]) {
-        PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
-        playlistDetailViewController.playlist = [[Playlist alloc] initWith:0];
+        UIImageView *playlistImageView = (UIImageView *)[sender view];
+        if ([self.playlistImageViews containsObject:playlistImageView]) {
+            NSUInteger index = [self.playlistImageViews indexOfObject:playlistImageView];
+            PlaylistDetailViewController *playlistDetailViewController = (PlaylistDetailViewController *)segue.destinationViewController;
+            playlistDetailViewController.playlist = [[Playlist alloc] initWith:index];
+        }
     }        
 }
 
